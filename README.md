@@ -1,6 +1,6 @@
 # Bookmark_App
 Do you ever feels like three letter agent that glow in the dark spying on your bookmark?<br>
-If you ever feel that way, this app is suitable for you!
+If you ever feel that way, this is for you!
 This is simple app for saving your bookmark<br>
 <br>
 1. run "pip install requipments.txt" to install all required packages<br>
