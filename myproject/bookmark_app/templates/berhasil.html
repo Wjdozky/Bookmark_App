@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="text-align: center;">
+    <h1>Bookmark App</h1>
+    <form action="addrecord/" method="post">
+      {% csrf_token %}
+      name:<br>
+      <input name="name">
+      <br><br>
+      Link:<br>
+      <input name="content">
+      <br><br>
+      <input type="submit" value="Submit">
+      </form>
+      <br>
+      <br>
+
+      <h4>Bookmark</h4>
+    
+
+
+    {% for post in mypost %}
+    <a href="{{post.content}}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">{{post.name}}</a>
+    |||||||
+      <a href="delete/{{ post.id }}" style="text-decoration: none;">delete</a>
+      {% endfor %} 
+      <br><br><br><br><br><br>
+      <button><a href="{% url 'logout' %}" style="text-decoration: none;color: black;">Logout</a></button>
+    </p>
+  </body>
+</html>
