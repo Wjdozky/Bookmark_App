@@ -29,6 +29,8 @@
     <a href="{{post.content}}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">{{post.name}}</a>
     |||||||
       <a href="delete/{{ post.id }}" style="text-decoration: none;">delete</a>
+    <br>
+    <br>
       {% endfor %} 
       <br><br><br><br><br><br>
       <button><a href="{% url 'logout' %}" style="text-decoration: none;color: black;">Logout</a></button>
